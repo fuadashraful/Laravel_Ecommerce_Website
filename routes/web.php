@@ -33,4 +33,7 @@ Route::post('admin/login_authenticate/','AdminController@admin_login_authenticat
 Route::get('/admin/add-category','CategoryController@index');
 Route::get('/admin/show-category','CategoryController@showCategory');
 Route::post('admin/save-category/','CategoryController@saveCategory');
-#Route::get('')
+Route::get('/admin/toggle_category_status/{category_id}/{category_status}','CategoryController@toggleCategoryStatus');
+Route::get('/admin/update_category/{category_id}','CategoryController@updateCategory');
+Route::put('/admin/update_post/{category_id}','CategoryController@update_post');
+Route::get('/admin/delete_category/{category_id}','CategoryController@delete_category');

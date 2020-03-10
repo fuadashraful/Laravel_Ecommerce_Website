@@ -12,6 +12,7 @@
   <link href="{{asset('backend/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
   <link href="{{asset('backend/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
   <link href="{{asset('backend/css/ruang-admin.min.css')}}" rel="stylesheet">
+  @stack('CSS')
 </head>
 
 <body id="page-top">
@@ -337,7 +338,9 @@
   <script src="{{asset('backend/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
   <script src="{{asset('backend/js/ruang-admin.min.js')}}"></script>
   <script src="{{asset('backend/vendor/chart.js/Chart.min.js')}}"></script>
-  <script src="{{asset('backend/js/demo/chart-area-demo.js')}}"></script>  
+  <script src="{{asset('backend/js/demo/chart-area-demo.js')}}"></script>
+  
+  @stack('JS')
 
   
 </body>
