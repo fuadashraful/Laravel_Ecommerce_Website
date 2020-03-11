@@ -51,6 +51,13 @@
           <span>Add Category</span>
         </a>
       </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="{{URL::to('/admin/add_manufacture/')}}">
+        <i class="fas fa-plus-square"></i>
+          <span>Add Manufacture</span>
+        </a>
+      </li>
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTable" aria-expanded="true"
@@ -66,12 +73,7 @@
           </div>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="ui-colors.html">
-        <i class="fas fa-plus-square"></i>
-          <span>Add Brand</span>
-        </a>
-      </li>
+
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true"

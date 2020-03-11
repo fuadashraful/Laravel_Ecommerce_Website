@@ -37,3 +37,11 @@ Route::get('/admin/toggle_category_status/{category_id}/{category_status}','Cate
 Route::get('/admin/update_category/{category_id}','CategoryController@updateCategory');
 Route::put('/admin/update_post/{category_id}','CategoryController@update_post');
 Route::get('/admin/delete_category/{category_id}','CategoryController@delete_category');
+
+
+
+
+// Manufacture related Route
+
+Route::get('/admin/add_manufacture/','ManufactureController@add_manufacture');
+Route::post('admin/save-manufacture/','ManufactureController@save_manufacture');
