@@ -81,7 +81,7 @@ class CategoryController extends Controller
           $data['category_description']=$request->categoryDescription;
           
           DB::table('category_tbl')->where('category_id',$cat_id)->update($data);
-          Session::put('message-delete','Category deleted Successfully');
+          Session::put('message-delete','Category updated Successfully');
           return Redirect::to('/admin/dashboard');
     }
 

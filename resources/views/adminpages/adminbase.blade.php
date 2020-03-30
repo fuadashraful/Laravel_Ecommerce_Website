@@ -59,6 +59,15 @@
         </a>
       </li>
 
+
+      <li class="nav-item">
+        <a class="nav-link" href="{{URL::to('/admin/show-manufacture')}}">
+          <i class="fab fa-fw fa-wpforms"></i>
+          <span>All Manufacture</span>
+        </a>
+      </li>
+
+
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTable" aria-expanded="true"
           aria-controls="collapseTable">

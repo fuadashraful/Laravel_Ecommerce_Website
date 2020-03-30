@@ -11,14 +11,10 @@
 |  
 */
 
-// Route::get('/', function () {
-//     return view('base');
-// });
 
 
 
 // frontend route ..........
-
 
 Route::get('/','HomeController@home');
 
@@ -44,4 +40,9 @@ Route::get('/admin/delete_category/{category_id}','CategoryController@delete_cat
 // Manufacture related Route
 
 Route::get('/admin/add_manufacture/','ManufactureController@add_manufacture');
-Route::post('admin/save-manufacture/','ManufactureController@save_manufacture');
+Route::post('/admin/save-manufacture/','ManufactureController@save_manufacture');
+Route::get('/admin/show-manufacture/','ManufactureController@show_manufacture');
+Route::get('/admin/toggle_manufacture_status/{manufacture_id}/{manufacture_status}/','ManufactureController@toggleManufactureStatus');
+Route::get('/admin/delete_manufacturerer/{id}','ManufactureController@delete_manufacture');
+Route::get('/admin/update_manufacture/{id}','ManufactureController@update_manufacture');
+Route::put('/admin/update_manufacture_post/{id}','ManufactureController@update_manufacture_post');
